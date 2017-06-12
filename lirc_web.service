@@ -1,0 +1,16 @@
+[Unit]
+After=syslog.target network.target
+Description=Lirc Web
+
+[Service]
+Environment="NODE_ENV=production"
+Environment="USER=pi"
+
+ExecStart=/usr/local/bin/lirc_web
+Restart=always
+Type=simple
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
