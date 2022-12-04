@@ -7,14 +7,15 @@
   },
   "macros": {
     "Projector_On": [
-      [ "BENQ_HT1085ST", "KEY_POWER" ],
-      [ "KENWOOD_1080VR", "KEY_AUX" ]
+      [ "BENQ_HT1085ST", "KEY_POWER" ]
     ],
     "Projector_Off": [
       [ "BENQ_HT1085ST", "KEY_POWER2" ],
       [ "delay", 250 ],
       [ "BENQ_HT1085ST", "KEY_POWER2" ],
-      [ "KENWOOD_1080VR", "KEY_PC" ]
+      [ "delay", 250 ],
+      [ "BENQ_HT1085ST", "KEY_POWER2" ],
+      [ "delay", 250 ]
     ]
   }
 }
